@@ -1,9 +1,11 @@
-<ngb-carousel *ngIf="images">
-    <ng-template ngbSlide *ngFor="let image of images">
-        <img [src]="image" alt="Random slide">
-        <div class="carousel-caption">
-            <h3 class="melp-title">Melp</h3>
-            <p>A site where you can find a good restaurant</p>
-        </div>
-    </ng-template>
-</ngb-carousel>
+<div class="animated fadeIn fast">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide *ngFor="let image of images">
+            <img [src]="image" alt="Random slide">
+            <div class="carousel-caption">
+                <h3 class="melp-title">Melp</h3>
+                <p>A site where you can find a good restaurant</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

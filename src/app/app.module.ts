@@ -7,15 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { APP_ROUTING } from './app.routes';
 
 //Servicios
+import { restaurantsService } from './services/restaurantes.service';
 
 // Components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/shared/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FooterComponent,
     AboutComponent,
     RestaurantsComponent,
-    CarouselComponent
+    CarouselComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule, NgbModule, HttpClientModule, APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    restaurantsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
