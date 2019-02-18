@@ -1,0 +1,14 @@
+<section class="welcome">
+    <div class="container-fluid px-0">
+        <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators" class="w-100">
+            <ng-template ngbSlide *ngFor="let image of images1">
+                <img [src]="image" alt="Random first slide" class="d-block">
+                <div class="carousel-caption">
+                    <h3 class="melp-title display-4">Melp</h3>
+                    <p>A site where you can find a real restaurant</p>
+                    <button class="btn btn-warning btn-lg">Restaurants</button>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</section>
