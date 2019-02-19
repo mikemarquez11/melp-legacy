@@ -26,10 +26,4 @@ export class RestaurantsComponent implements OnInit {
       console.log(idx);
       this.router.navigate( ['/restaurant', idx]);
   }
-
-  buscarRestaurantes(termino:string) {
-
-   let restaurantesArr[] = [];
-   termino = termino.toLowerCase();
-  }
 }
