@@ -510,3 +510,11 @@ body {
 
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Facebook Button */
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+    margin: 1rem;
+}
