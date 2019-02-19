@@ -9,5 +9,5 @@ export class restaurantsService {
         }
         getRestaurants():Observable<any> {
           return this.http.get('https://s3-us-west-2.amazonaws.com/lgoveabucket/data_melp.json')
-}
+        }
 }

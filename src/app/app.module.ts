@@ -18,6 +18,7 @@ import { AboutComponent } from './components/about/about.component';
 import { RestaurantsComponent } from './components/restaurants/restaurants.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomeComponent } from './components/home/home.component';
+import { RestaurantComponent } from './components/restaurant/restaurant.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './components/home/home.component';
     AboutComponent,
     RestaurantsComponent,
     CarouselComponent,
-    HomeComponent
+    HomeComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule, NgbModule, HttpClientModule, APP_ROUTING
