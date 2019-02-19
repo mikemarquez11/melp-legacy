@@ -6,15 +6,13 @@ import { Component } from '@angular/core';
     styleUrls: ['./header.component.css'],
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
     value = '';
 
     constructor(){
     }
 
-    ngOnInit(){
-    }
     buscarRestaurant(value: string) {
       this.value = value;
       console.log(value);
