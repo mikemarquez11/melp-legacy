@@ -1,8 +1,8 @@
-<div class="jumbotron">
-  <h1 class="display-4">{{ onerestaurant.name }}</h1>
+<div *ngIf="onerestaurant" class="jumbotron animated fadeIn">
+    <h1 class="display-4 animated fadeIn fast">{{ onerestaurant.name }}</h1>
     <p class="lead"> {{ onerestaurant.contact.email }} - {{ onerestaurant.contact.phone }}</p>
     <hr class="my-4">
     <p>{{ onerestaurant.contact.site }}</p>
-  <a class="btn btn-warning btn-lg" href="#" role="button">Visit</a>
-  <a [routerLink]="['restaurants']" class="btn btn-outline-link float-right">Volver</a>
+    <a class="btn btn-warning btn-lg" href="#" role="button">Visit</a>
+    <a [routerLink]="['restaurants']" class="btn btn-outline-link float-right">Back</a>
 </div>
